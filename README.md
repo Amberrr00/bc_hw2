@@ -32,7 +32,7 @@
 5. 在 `./contracts` 中部署合约，运行如下的命令：
    ```bash
    npx hardhat run scripts/deploy.ts --network ganache
-6. 在 `./frontend/src/utils/contract-addresses.json"` 中修改合约地址至部署地址
+6. 在 `./frontend/src/utils/contract-addresses.json` 中修改合约地址至部署地址
 7. 在 `./frontend` 中安装需要的依赖，运行如下的命令：
     ```bash
     npm install
