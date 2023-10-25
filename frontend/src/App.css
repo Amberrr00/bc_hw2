@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.myActive{
+  background-color: white;
+  width:200px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.notActive{
+  color: #FFF;
+  width:200px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
