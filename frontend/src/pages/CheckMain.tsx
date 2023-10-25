@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { MDBDataTable } from 'mdbreact';
 import { Navigate } from 'react-router-dom';
 import {useEffect, useState} from 'react';
-import {borrowYourCarContract, web3} from "../utils/contracts";
+import {borrowYourCarContract, myERC20Contract, web3} from "../utils/contracts";
 
 import {
   MDBContainer,
@@ -24,6 +24,7 @@ const GanacheTestChainRpcUrl = 'http://127.0.0.1:8545'
 const CheckMain = () => {
 
   const [account, setAccount] = useState('')
+  const [accountBalance, setAccountBalance] = useState(0)
   const [managerAccount, setManagerAccount] = useState('')
   const [queryOutput, setQueryOutput] = useState('')
   const [queryCarId, setQueryCarId] = useState('')
@@ -104,6 +105,8 @@ const CheckMain = () => {
         if (borrowYourCarContract) {
             const ma = await borrowYourCarContract.methods.manager().call()
             setManagerAccount(ma)
+            const ab = await myERC20Contract.methods.balanceOf(account).call()
+            setAccountBalance(ab)
         } else {
             alert('Contract not exists.')
         }

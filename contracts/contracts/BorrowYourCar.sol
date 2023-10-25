@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 // Uncomment this line to use console.log
 import "hardhat/console.sol";
+import "./MyERC20.sol";
 
 contract BorrowYourCar is ERC721 {
 
@@ -23,7 +24,7 @@ contract BorrowYourCar is ERC721 {
 
     address public manager;
     uint256 carCount = 0;
-    uint256 borrowTime = 1;
+    MyERC20 public payFee;
 
     mapping(uint256 => Car) public cars; // A map from car index to its information
     mapping(address => uint256[]) public ownedCars;
@@ -35,6 +36,7 @@ contract BorrowYourCar is ERC721 {
 
     constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {
         manager = msg.sender;
+        payFee = new MyERC20(_name, _symbol);
     }
 
     // mint cars
@@ -54,6 +56,10 @@ contract BorrowYourCar is ERC721 {
         require(canBorrow(_tokenId), "Car cannot be borrowed at this time");
         cars[_tokenId].borrower = msg.sender;
         cars[_tokenId].borrowUntil = block.timestamp + borrowDuration;
+
+        uint256 borrowFee = borrowDuration / 10000;
+        require(payFee.balanceOf(msg.sender) >= borrowFee, "Insufficient balance");
+        payFee.transferFrom(msg.sender, cars[_tokenId].owner, borrowFee);
     }
 
     // not be used yet
