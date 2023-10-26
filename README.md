@@ -1,4 +1,4 @@
-<img width="1280" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/c23546c8-4e7f-4143-9efa-fe1945041afc"># carBorrow
+# carBorrow
 
 > 简易汽车借用系统，参与方包括：汽车拥有者，有借用汽车需求的用户
 >
@@ -83,7 +83,7 @@
 项目运行成功的关键页面和流程截图。主要包括操作流程以及和区块链交互的截图。</br>
 
 1、连接钱包
-
+<img width="1280" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/c23546c8-4e7f-4143-9efa-fe1945041afc">
 
 
 
