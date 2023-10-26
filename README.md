@@ -82,27 +82,27 @@
 
 项目运行成功的关键页面和流程截图。主要包括操作流程以及和区块链交互的截图。<br>
 
-1、连接钱包
+1、连接钱包<br>
 <img width="1280" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/c23546c8-4e7f-4143-9efa-fe1945041afc">
    -连接成功
 <img width="1242" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/c8206c66-6011-45e9-87b6-1e4e4a90256d">
 <br>
-2、获取可借车辆列表
+2、获取可借车辆列表<br>
    -默认显示，点击按钮可刷新
 <img width="1265" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/43085745-dc47-44fe-a2ee-9f47dd32a952">
 <br>
-3、获得拥有车辆列表
+3、获得拥有车辆列表<br>
    -默认显示，点击按钮可刷新
 <img width="1209" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/2a6675b4-41bf-4fae-a92c-a91eca3f9d83">
 <br>
-4、申请新车辆
+4、申请新车辆<br>
    -点击按钮申请
 <img width="1280" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/2a58ef28-2832-4f68-958e-76648b74d9ed">
    -手动刷新页面（只按按钮显示的新获得车辆的信息有误，需要点击浏览器的刷新，可通过在前端添加强制刷新页面解决（但懒得改了）））
 <img width="1263" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/9ea21275-d9e7-4a63-aa07-7dd16cde2b6a">
    （不小心申请了两辆）
 <br>
-5、借用车辆
+5、借用车辆<br>
    -点击按钮借用<br>
    （换了个账户）
 <img width="1280" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/94e34fad-d2bf-43c7-842a-e330a6c6f2f8">
@@ -110,7 +110,7 @@
    （不小心借了两次）
 <img width="1279" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/3d65b8a8-7079-4997-b722-537d69ce1edd">
 <br>
-6、查询车辆
+6、查询车辆<br>
    -输入车辆序号查询<br>
    -可借用车辆
    <img width="1250" alt="image" src="https://github.com/Amberrr00/bc_hw2/assets/100553258/bc7414b9-57e2-4e5e-9966-3acd26542a64">
